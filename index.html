@@ -11,24 +11,14 @@
 <TR>
 <TD width="70%">
 <b><font size="5">Rui Zhao</font></b>
-<br>
-<br>
-<b><font size="3">Email: ruizhao@unomaha.edu</font></b>
-<br>
+<br><br>
+<b><font size="3">ruizhao@unomaha.edu</font></b>
+<br><br>
 </TD>
 </TR>
-</TABLE>
-
-<HR size="2">
-
-<TABLE border="0" width="800">
 <TR>
 <TD>
-  <H3>Research Interests:</H3>
-<UL>
-  <LI>Web security and privacy</LI>
-  <LI>System security</LI>
-</UL>
+<b><font size="3">Web Security and Privacy, System Security</font></b><br><br>
 </TD>
 </TR>
 <TR>
@@ -37,12 +27,38 @@ Rui Zhao received his B.E. degree in Information Countermeasures Technology and 
 </TD>
 </TR>
 </TABLE>
-
+<SCRIPT>
+function filter(tagname) {
+  var lis = document.getElementsByTagName('li');  
+  for (var i = 0; i < lis.length; i++) {
+    if (tagname == "ALL") {
+      lis[i].style.display = '';
+    } else {
+      var tag = lis[i].getAttribute("tag");
+      if (tagname == tag)
+        lis[i].style.display = '';
+      else
+        lis[i].style.display = 'none';
+    }   
+  }
+}
+</SCRIPT>
+<br>
 <HR size="2">
-
+<br>
+<input type="button" onclick="filter('ALL')" value="All"/>
+<input type="button" onclick="filter('TIFS')" value="IEEE Transactions on Information Forensics and Security (TIFS)"/>
+<input type="button" onclick="filter('COMPSEC')" value="Computers & Security (COMPSEC)"/><br><br>
+<input type="button" onclick="filter('WWW')" value="Web Conference (WWW)"/>
+<input type="button" onclick="filter('SecureComm')" value="EAI International Conference on Security and Privacy in Communication Networks (SecureComm)"/><br><br>
+<input type="button" onclick="filter('ICCCN')" value="IEEE International Conference on Computer Communication and Networks (ICCCN)"/><br><br>
+<input type="button" onclick="filter('SRDS')" value="IEEE Symposium on Reliable Distributed Systems (SRDS)"/>
+<input type="button" onclick="filter('CODASPY')" value="ACM Conference on Data and Applications Security (CODASPY)"/><br><br>
+<input type="button" onclick="filter('TrustCom')" value="IEEE International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)"/><br><br>
+<input type="button" onclick="filter('COMPSAC')" value="IEEE Annual Computers, Software, and Applications Conference"/>
 <H3>Refereed Journal Papers</H3>
 <UL>
-  <LI>[J7] <b>Toward the Flow-centric Detection of Browser Fingerprinting.</b> <A HREF="https://www.sciencedirect.com/science/article/pii/S0167404823005515">[PDF]</A><br>
+  <LI tag="COMPSEC">[J7] <b>Toward the Flow-centric Detection of Browser Fingerprinting.</b> <A HREF="https://www.sciencedirect.com/science/article/pii/S0167404823005515">[PDF]</A><br>
   By Rui Zhao.<br>
   In Journal of Computers & Security (COMPSEC), Elsevier, 2024.<br><br>
   
@@ -50,11 +66,11 @@ Rui Zhao received his B.E. degree in Information Countermeasures Technology and 
   By Dip Kiran Pradhan Newar, Rui Zhao, Harvey Siy, Leen-Kiat Soh, Myoungkyu Song.<br>
   In Journal of Science of Computer Programming, 2023.<br><br>
   
-  <LI>[J5] <b>Sensor-based Mobile Web Cross-site Input Inference Attacks and Defenses.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/8371301">[PDF]</A><br>
+  <LI tag="TIFS">[J5] <b>Sensor-based Mobile Web Cross-site Input Inference Attacks and Defenses.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/8371301">[PDF]</A><br>
   By Rui Zhao, Chuan Yue, and Qi Han.<br>
   In IEEE Transactions on Information Forensics and Security (TIFS), 2019.<br><br>
 
-  <LI>[J4] <b>Design and Evaluation of the Highly Insidious Extreme Phishing Attacks.</b> <A HREF="https://www.sciencedirect.com/science/article/pii/S0167404817301633">[PDF]</A><br>
+  <LI tag="COMPSEC">[J4] <b>Design and Evaluation of the Highly Insidious Extreme Phishing Attacks.</b> <A HREF="https://www.sciencedirect.com/science/article/pii/S0167404817301633">[PDF]</A><br>
   By Rui Zhao, Samantha John, Stacy Karas, Cara Bussell, Jennifer Roberts, Daniel Six, Brandon Gavett, Chuan Yue.<br>
   In Journal of Computers & Security (COMPSEC), Elsevier, 2017.<br><br>
 
@@ -62,7 +78,7 @@ Rui Zhao received his B.E. degree in Information Countermeasures Technology and 
   By Brandon E. Gavett, Rui Zhao, Samantha E. John, Cara A. Bussell, Jennifer Roberts, Chuan Yue.<br>
   In Journal of PLoS ONE 12(2): e0171620, 2017.<br><br>
 
-  <LI>[J2] <b>Toward A Secure and Usable Cloud-based Password Manager for Web Browsers.</b> <A HREF="https://www.sciencedirect.com/science/article/pii/S0167404814001059">[PDF]</A><br>
+  <LI tag="COMPSEC">[J2] <b>Toward A Secure and Usable Cloud-based Password Manager for Web Browsers.</b> <A HREF="https://www.sciencedirect.com/science/article/pii/S0167404814001059">[PDF]</A><br>
   By Rui Zhao and Chuan Yue.<br>
   In Journal of Computers & Security (COMPSEC), Elsevier, 46(3): 32--47, 2014.<br><br> 
 
@@ -70,38 +86,37 @@ Rui Zhao received his B.E. degree in Information Countermeasures Technology and 
   By Rui Zhao, Chuan Yue, and Kun Sun.<br>
   In Journal of ASE (Academy of Science and Engineering) Science Journal, 1(4): 1--15, 2013.<br><br>
 </UL>
-
 <H3>Refereed Conference Papers</H3>
 <UL>
-  <LI>[C18] <b>CamPass: a Secure Camera-based Password Manager for Kiosk Browsing.</b><br>
+  <LI tag="TrustCom">[C18] <b>CamPass: a Secure Camera-based Password Manager for Kiosk Browsing.</b><br>
   By Rui Zhao.<br>
   In Proceedings of the IEEE International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom), 2023.<br><br>
 
-  <LI>[C17] <b>Securing Zero Trust Networks: The Decentralized Host-to-Host Authentication Policy Enforcement.</b><br>
+  <LI tag="TrustCom">[C17] <b>Securing Zero Trust Networks: The Decentralized Host-to-Host Authentication Policy Enforcement.</b><br>
   By Adam Spanier, Rui Zhao, Pei-Chi Huang.<br>
   In Proceedings of the IEEE International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom), 2023.<br><br>
   
-  <LI>[C16] <b>FProbe: the Flow-centric Detection and a Large-scale Measurement of Browser Fingerprinting.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/10230168">[PDF]</A><br>
+  <LI tag="ICCCN">[C16] <b>FProbe: the Flow-centric Detection and a Large-scale Measurement of Browser Fingerprinting.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/10230168">[PDF]</A><br>
   By Rui Zhao.<br>
   In Proceedings of the IEEE International Conference on Computer Communication and Networks (ICCCN), 2023.<br><br>
 
-  <LI>[C15] <b>The Chameleon on the Web: an Empirical Study of the Insidious Proactive Web Defacements.</b> <A HREF="https://dl.acm.org/doi/abs/10.1145/3543507.3583377">[PDF]</A> <A HREF="https://github.com/rzhao-sec/PACTOR">[Github]</A><br>
+  <LI tag="WWW">[C15] <b>The Chameleon on the Web: an Empirical Study of the Insidious Proactive Web Defacements.</b> <A HREF="https://dl.acm.org/doi/abs/10.1145/3543507.3583377">[PDF]</A> <A HREF="https://github.com/rzhao-sec/PACTOR">[Github]</A><br>
   By Rui Zhao.<br>
   In Proceedings of the Web Conference (formerly the WWW Conference), 2023.<br><br>
   
-  <LI>[C14] <b>An Intelligent Tutoring System for API Misuse Correction by Instant Quality Feedback.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/9842478">[PDF]</A><br>
+  <LI tag="COMPSAC">[C14] <b>An Intelligent Tutoring System for API Misuse Correction by Instant Quality Feedback.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/9842478">[PDF]</A><br>
   By Rui Zhao, Harvey Siy, Chulwoo Pack, Leen-Kiat Soh, Myoungkyu Song.<br>
   In Proceedings of the IEEE Annual Computers, Software, and Applications Conference (COMPSAC), 2022.<br><br>
   
-  <LI>[C13] <b>A Feasibility Study of Using Code Clone Detection for Secure Programming Education.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/9842461">[PDF]</A><br>
+  <LI tag="COMPSAC">[C13] <b>A Feasibility Study of Using Code Clone Detection for Secure Programming Education.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/9842461">[PDF]</A><br>
   By Michael Menard, Tommy Nelson, Milan Shahi, Hugh Morton, Adam DeTavernier, Rui Zhao, Harvey Siy, Myoungkyu Song.<br>
   In Proceedings of the IEEE Annual Computers, Software, and Applications Conference (COMPSAC), 2022.<br><br>
   
-  <LI>[C12] <b>FireBugs: Finding and Repairing Cryptography API Misuses in Mobile Applications.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/9529806">[PDF]</A><br>
+  <LI tag="COMPSAC">[C12] <b>FireBugs: Finding and Repairing Cryptography API Misuses in Mobile Applications.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/9529806">[PDF]</A><br>
   By Larry Singleton, Rui Zhao, Harvey Siy, Myoungkyu Song.<br>
   In Proceedings of the IEEE Annual Computers, Software, and Applications Conference (COMPSAC), 2021.<br><br>
   
-  <LI>[C11] <b>A Machine-learning based Framework for Detection of Fake Political Speech.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/9343368">[PDF]</A><br>
+  <LI tag="TrustCom">[C11] <b>A Machine-learning based Framework for Detection of Fake Political Speech.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/9343368">[PDF]</A><br>
   By Chinguun Purevdagva, Rui Zhao, Pei-Chi Huang, William Mahoney.<br>
   In Proceedings of the IEEE International Conference on Trust, Security and Privacy in Computing and Communication/<br>IEEE International Conference On Big Data Science and Engineering (TrustCom/BigDataSE), 2020.<br><br>
 
@@ -109,7 +124,7 @@ Rui Zhao received his B.E. degree in Information Countermeasures Technology and 
   By Larry Singleton, Rui Zhao, Myoungkyu Song, Harvey Siy.<br>
   In Proceedings of the Annual Conference on IT Education (SIGITE), 2020.<br><br>
 
-  <LI>[C9] <b>Traffic-based Automatic Detection of Browser Fingerprinting.</b> <A HREF="https://link.springer.com/chapter/10.1007/978-3-030-37228-6_18">[PDF]</A><br>
+  <LI tag="SecureComm">[C9] <b>Traffic-based Automatic Detection of Browser Fingerprinting.</b> <A HREF="https://link.springer.com/chapter/10.1007/978-3-030-37228-6_18">[PDF]</A><br>
   By Rui Zhao, Edward Chow, Chunchun Li.<br>
   In Proceedings of the EAI International Conference on Security and Privacy in Communication Networks (SecureComm), 2019.<br><br>
   
@@ -117,23 +132,23 @@ Rui Zhao received his B.E. degree in Information Countermeasures Technology and 
   By Larry Singleton, Rui Zhao, Myoungkyu Song, Harvey Siy.<br>
   In Proceedings of the IEEE/ACM International Conference on Mobile Software Engineering and Systems (MobileSoft), 2019.<br><br>
 
-  <LI>[C7] <b>Effective Mobile Web User Fingerprinting via Motion Sensors.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/8456063">[PDF]</A><br>
+  <LI tag="TrustCom">[C7] <b>Effective Mobile Web User Fingerprinting via Motion Sensors.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/8456063">[PDF]</A><br>
   By Zhiju Yang, Rui Zhao, and Chuan Yue.<br>
   In Proceedings of the IEEE International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom), 2018.<br><br>
   
-  <LI>[C6] <b>Cross-site Input Inference Attacks on Mobile Web Users.</b> <A HREF="https://link.springer.com/chapter/10.1007/978-3-319-78813-5_32">[PDF]</A><br>
+  <LI tag="SecureComm">[C6] <b>Cross-site Input Inference Attacks on Mobile Web Users.</b> <A HREF="https://link.springer.com/chapter/10.1007/978-3-319-78813-5_32">[PDF]</A><br>
   By Rui Zhao, Chuan Yue, and Qi Han.<br>
   In Proceedings of the EAI International Conference on Security and Privacy in Communication Networks (SecureComm), 2017.<br><br>
 
-  <LI>[C5] <b>The Highly Insidious Extreme Phishing Attacks.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/7568582">[PDF]</A><br>
+  <LI tag="ICCCN">[C5] <b>The Highly Insidious Extreme Phishing Attacks.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/7568582">[PDF]</A><br>
   By Rui Zhao, Samantha John, Stacy Karas, Cara Bussell, Jennifer Roberts, Daniel Six, Brandon Gavett, and Chuan Yue.<br>
   In Proceedings of the IEEE International Conference on Computer Communication and Networks (ICCCN), 2016.<br><br>
 
-  <LI>[C4] <b>SafeSky: A Secure Cloud Storage Middleware for End-user Applications.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/7371564">[PDF]</A><br>
+  <LI tag="SRDS">[C4] <b>SafeSky: A Secure Cloud Storage Middleware for End-user Applications.</b> <A HREF="https://ieeexplore.ieee.org/abstract/document/7371564">[PDF]</A><br>
   By Rui Zhao, Chuan Yue, Byungchul Tak, and Chunqiang Tang.<br>
   In Proceedings of the IEEE Symposium on Reliable Distributed Systems (SRDS), 2015.<br><br>
 
-  <LI>[C3] <b>Automatic Detection of Information Leakage Vulnerabilities in Browser Extensions.</b> <A HREF="https://dl.acm.org/doi/abs/10.1145/2736277.2741134">[PDF]</A><br>
+  <LI tag="WWW">[C3] <b>Automatic Detection of Information Leakage Vulnerabilities in Browser Extensions.</b> <A HREF="https://dl.acm.org/doi/abs/10.1145/2736277.2741134">[PDF]</A><br>
   By Rui Zhao, Chuan Yue, and Qing Yi.<br>
   In Proceedings of the International World Wide Web Conference (WWW), 2015.<br><br>
 
@@ -141,7 +156,7 @@ Rui Zhao received his B.E. degree in Information Countermeasures Technology and 
   By Rui Zhao, Chuan Yue, and Kun Sun.<br>
   In Proceedings of the ASE/IEEE International Conference on Social Computing (SocialCom), 2013.<br><br>
 
-  <LI>[C1] <b>All Your Browser-saved Passwords Could Belong to Us: a Security Analysis and a Cloud-based New Design.</b> <A HREF="https://dl.acm.org/doi/abs/10.1145/2435349.2435397">[PDF]</A><br>
+  <LI tag="CODASPY">[C1] <b>All Your Browser-saved Passwords Could Belong to Us: a Security Analysis and a Cloud-based New Design.</b> <A HREF="https://dl.acm.org/doi/abs/10.1145/2435349.2435397">[PDF]</A><br>
   By Rui Zhao and Chuan Yue.<br>
   In Proceedings of the ACM Conference on Data and Applications Security (CODASPY), 2013.<br><br>
 </UL>
