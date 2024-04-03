@@ -6,9 +6,13 @@
 <TITLE>Rui Zhao</TITLE>
 <STYLE>
 #scroller-right{
-    position: fixed;
-    right: 0;
-    background:#CCC;
+  border:1px solid gray;
+  position: fixed;
+  left: 50%;
+  background:#CCC;
+  margin:1em 1em;
+  display: inline-block;
+  width: 12.75%
 }
 </STYLE>
 </HEAD>
@@ -55,21 +59,21 @@ function filter(tagname, tagvalue) {
 </SCRIPT>
 <br>
 <HR size="2">
-  <div id="scroller-right" style="margin:1em 1em;"><br>
-    <input type="button" onclick="filter('venue', 'ALL')" value="All" style="width:150px"/><br style="line-height: 150%;"><br>
-    <b>By Venue:</b><br><br>
-    <input type="button" onclick="filter('venue', 'TIFS')" value="IEEE Transactions on Information Forensics and Security (TIFS)"/><br><br>
-    <input type="button" onclick="filter('venue', 'COMPSEC')" value="Computers & Security (COMPSEC)"/><br><br>
-    <input type="button" onclick="filter('venue', 'WWW')" value="Web Conference (WWW)"/><br><br>
-    <input type="button" onclick="filter('venue', 'SecureComm')" value="EAI International Conference on Security and Privacy in Communication Networks (SecureComm)"/><br><br>
-    <input type="button" onclick="filter('venue', 'SRDS')" value="IEEE Symposium on Reliable Distributed Systems (SRDS)"/><br><br>
-    <input type="button" onclick="filter('venue', 'CODASPY')" value="ACM Conference on Data and Applications Security (CODASPY)"/><br><br>
-    <input type="button" onclick="filter('venue', 'ICCCN')" value="IEEE International Conference on Computer Communication and Networks (ICCCN)"/><br><br>
-    <input type="button" onclick="filter('venue', 'TrustCom')" value="IEEE International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)"/><br><br>
-    <input type="button" onclick="filter('venue', 'COMPSAC')" value="IEEE Annual Computers, Software, and Applications Conference (COMPSAC)"/><br><br>
-    <b>By Authorship:</b><br><br>
-    <input type="button" onclick="filter('first', 'yes')" value="First Author"/>
-    <input type="button" onclick="filter('crsp', 'yes')" value="Correponding Author"/><br><br>
+  <div id="scroller-right"><br>
+    &nbsp;<input type="button" onclick="filter('venue', 'ALL')" value="All" style="width:150px"/><br style="line-height: 150%;"><br>
+    &nbsp;<b>Filter By Venue:</b><br><br>
+    &nbsp;<input type="button" onclick="filter('venue', 'TIFS')" value="TIFS"/>
+    &nbsp;<input type="button" onclick="filter('venue', 'COMPSEC')" value="COMPSEC"/><br><br>
+    &nbsp;<input type="button" onclick="filter('venue', 'WWW')" value="WWW"/>
+    &nbsp;<input type="button" onclick="filter('venue', 'SRDS')" value="SRDS"/><br><br>
+    &nbsp;<input type="button" onclick="filter('venue', 'CODASPY')" value="CODASPY"/>
+    &nbsp;<input type="button" onclick="filter('venue', 'SecureComm')" value="SecureComm"/><br><br>
+    &nbsp;<input type="button" onclick="filter('venue', 'ICCCN')" value="ICCCN"/>
+    &nbsp;<input type="button" onclick="filter('venue', 'TrustCom')" value="TrustCom"/><br><br>
+    &nbsp;<input type="button" onclick="filter('venue', 'COMPSAC')" value="COMPSAC"/><br><br>
+    &nbsp;<b>Filter By Authorship:</b><br><br>
+    &nbsp;<input type="button" onclick="filter('first', 'yes')" value="First Author"/>
+    &nbsp;<input type="button" onclick="filter('crsp', 'yes')" value="Correponding Author"/><br><br>
   </div>
 <H3>Refereed Journal Papers</H3>
 <UL>
