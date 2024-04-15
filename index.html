@@ -8,11 +8,10 @@
 #scroller-right{
   border:1px solid gray;
   position: fixed;
-  left: 50%;
+  right: 1%;
   background:#CCC;
   margin:1em 1em;
   display: inline-block;
-  width: 12.75%
 }
 </STYLE>
 </HEAD>
@@ -60,7 +59,7 @@ function filter(tagname, tagvalue) {
 <br>
 <HR size="2">
   <div id="scroller-right"><br>
-    &nbsp;<input type="button" onclick="filter('venue', 'ALL')" value="All" style="width:150px"/><br style="line-height: 150%;"><br>
+    &nbsp;<input type="button" onclick="filter('venue', 'ALL')" value="All" style="width:150px"/><br><br>
     &nbsp;<b>Filter By Venue:</b><br><br>
     &nbsp;<input type="button" onclick="filter('venue', 'TIFS')" value="TIFS"/>
     &nbsp;<input type="button" onclick="filter('venue', 'COMPSEC')" value="COMPSEC"/><br><br>
@@ -73,7 +72,7 @@ function filter(tagname, tagvalue) {
     &nbsp;<input type="button" onclick="filter('venue', 'COMPSAC')" value="COMPSAC"/><br><br>
     &nbsp;<b>Filter By Authorship:</b><br><br>
     &nbsp;<input type="button" onclick="filter('first', 'yes')" value="First Author"/>
-    &nbsp;<input type="button" onclick="filter('crsp', 'yes')" value="Correponding Author"/><br><br>
+    &nbsp;<input type="button" onclick="filter('crsp', 'yes')" value="Correponding Author"/>&nbsp;<br><br>
   </div>
 <H3>Refereed Journal Papers</H3>
 <UL>
